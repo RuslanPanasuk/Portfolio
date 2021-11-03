@@ -1,0 +1,54 @@
+.about {
+  height: 840px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 400px;
+    height: 600px;
+  }
+  &__content {
+    width: 570px;
+  }
+  &__title {
+    position: relative;    
+    z-index: 2;
+    padding-left: 10px;
+    @include before_circle;
+  }
+  &__subtitle {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    @include after_line;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(2, 116px);
+    gap: 20px 50px;
+    margin-top: 40px;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    position: relative;
+    @include before_circle;
+    &:before {
+      top: 0;
+    }
+  }
+  &__img {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  &__content {
+    width: 200px;
+  }
+}
