@@ -13,10 +13,10 @@
 }
 
 @mixin after_line {
-  &:before {
+  &:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 0;
     width: 60px;
     height: 3px;

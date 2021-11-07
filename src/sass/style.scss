@@ -4,7 +4,8 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-html {
+html, body {
+    font-weight: 500;
     font-size: 14px;
     line-height: 21px;
 }
@@ -30,4 +31,6 @@ html {
 
 @import 'blocks/menu';
 
-@import 'blocks/about'
+@import 'blocks/about';
+
+@import 'blocks/resume';
