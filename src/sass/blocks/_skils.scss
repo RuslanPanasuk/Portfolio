@@ -1,22 +1,6 @@
 .skils {
   padding-top: 120px;
   padding-bottom: 120px;
-  &__title {    
-    position: relative;
-    text-align: center;
-    @include before_circle;
-    &:before {
-      left: calc(50% - 18px);
-    }
-  }
-  &__subtitle {
-    position: relative;
-    text-align: center;
-    @include after_line;
-    &:after {
-      left: calc(50% - 30px);
-    }
-  }
   &__content {
     padding-top: 85px;
     padding-bottom: 120px;

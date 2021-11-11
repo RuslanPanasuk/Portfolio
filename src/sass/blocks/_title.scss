@@ -20,5 +20,23 @@
   &_fz12 {
     font-size: 12px;
     line-height: 18px;
+  }  
+}
+
+.section_title {
+  position: relative;
+  text-align: center;
+  @include before_circle;
+  &:before {
+    left: calc(50% - 18px);
+  }
+}
+
+.section_subtitle {
+  position: relative;
+  text-align: center;
+  @include after_line;
+  &:after {
+    left: calc(50% - 30px);
   }
 }

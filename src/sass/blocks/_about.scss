@@ -15,17 +15,18 @@
     padding-top: 6px;
   }
   &__title {
-    position: relative;    
-    z-index: 2;
+    text-align: left;
     padding-left: 10px;
-    @include before_circle;
+    &::before {
+      left: 0;
+    }
   }
   &__subtitle {
-    position: relative;
+    text-align: left;
     margin-top: 6px;
     margin-bottom: 24px;
-    @include after_line;
     &:after {
+      left: 0;
       bottom: 0;
     }
   }
