@@ -1,0 +1,345 @@
+@media (max-width: 1439px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+//---------------------------------------------------------
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__content {
+      width: 530px;
+    }
+    &__cards {
+      grid-template-columns: repeat(2, 255px);
+      gap: 20px 20px;
+    }
+  }
+
+  .resume {
+    &__content {   
+      padding-left: 20px;
+      padding-right: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+  }
+
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 270px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .vertical,
+      .horizontal {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }    
+  }
+
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 35px;
+    &__img {
+      height: auto;
+    }
+    &__content {
+      width: 51%;
+    }
+    &__input {
+      width: 100%;
+    }
+    &__privasy {
+      width: 230px;
+    }
+  }
+
+}
+
+//---------------------------------------------------------
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .about {
+    &__subtitle {
+      font-size: 30px;
+      line-height: 55px;
+    }
+    &__img {
+      width: 300px;
+      height: 400px;
+    }
+    &__content {
+      width: 380px;
+    }
+    &__cards {
+      grid-template-columns: repeat(1, 380px);      
+      grid-template-rows: repeat(3, 116px);
+      gap: 20px 20px;
+    }
+  }
+  .card {
+    &__content {
+      width: 320px;
+    }
+  }
+
+  .skils {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__content {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 270px);
+      grid-template-rows: repeat(3, 270px);
+      gap: 13px 13px;
+    }
+  }
+
+  .prices {
+    &__container {
+      padding-top: 40px;
+    }
+    &__content {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      row-gap: 20px;
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__item {
+      width: 330px;
+    }
+  }
+
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &__content {
+      width: 40%;
+    }
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__input {
+      order: 0;
+    }
+    &__textarea {
+      order: 0;
+      width: 100%;
+    }
+    &__btn {
+      order: 2;
+      width: fit-content;
+    }
+    &__privasy {
+      order: 1;
+      width: 230px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+//---------------------------------------------------------
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title {
+    &_fz48 {
+      font-size: 28px;
+    }
+  }
+  .promo {
+    background: url('../img/main_bg.jpg') no-repeat 90%/cover;
+    &__title {
+      line-height: 39px;
+      width: 300px;
+    }
+  }
+  .about {    
+    padding-top: 40px;
+    padding-bottom: 280px;    
+    &__img {
+      width: 250px;
+      height: 380px;
+      margin-bottom: 40px;
+    }
+    &__content {
+      position: relative;
+      width: 275px;
+    }   
+    &__subtitle {
+      font-size: 30px;
+      line-height: 55px;
+    }
+    &__cards {
+      position: absolute;
+      right: 0;
+      top: 400px;
+      grid-template-columns: repeat(2, 260px);
+    }
+  }
+  .card {
+    &__content {
+      width: 200px;
+    }
+  }
+
+  .resume {
+    padding-top: 40px;
+    &__content {
+      padding-top: 40px;    
+      padding-left: 10px;
+      padding-right: 10px;
+      column-gap: 20px;
+    }
+  }
+
+  .skils {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      grid-template-columns: repeat(2, 270px);
+      grid-template-rows: repeat(4, 270px);
+    }
+  }
+
+  .prices {
+    &__content {
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      row-gap: 30px;
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__item {
+      width: 380px;
+    }
+  }
+
+  .contacts {
+    &__img {
+      display: none;
+    }
+    &__content {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 6px;
+    }
+  }
+}
+
+
+
+//---------------------------------------------------------
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+  }
+  .promo {
+    background: url('../img/main_bg.jpg') no-repeat 77%/cover;
+    &__subtitle {
+      width: 150px;
+    }
+    &__btns {
+      width: 200px;
+      margin-top: 30px;
+    }
+  }
+  .about {    
+    padding-bottom: 40px;  
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &__content {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__cards {
+      position: relative;
+      top: 0;
+      grid-template-columns: repeat(1, 260px);
+    }
+  }  
+
+  .resume {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+  }
+
+  .skils {    
+    padding-left: 10px;
+    padding-right: 10px;
+    &__content {
+      grid-template-columns: repeat(1, 270px);
+      grid-template-rows: repeat(7, 270px);
+      gap: 20px 20px;
+    }
+    &__indicators {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 70px);
+      gap: 30px 45px;
+    }
+  }
+
+  .prices {
+    &__container {
+      padding-top: 40px;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+}
