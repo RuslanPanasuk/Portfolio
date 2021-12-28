@@ -1,1 +1,1 @@
-https://ruslanpanasuk.github.io/Portfolio/
+https://ruslanpanasuk.github.io/Portfolio/dist/
